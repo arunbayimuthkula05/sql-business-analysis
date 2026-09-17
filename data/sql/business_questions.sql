@@ -63,3 +63,15 @@ ORDER BY total_orders DESC;
 SELECT
     AVG(Quantity * Unit_Price) AS average_order_value
 FROM sales;
+-- Business Question 8:
+-- What is the average order value?
+
+SELECT
+    AVG(Quantity * Unit_Price) AS average_order_value
+FROM sales;
+-- Business Question 10:
+-- What is the total revenue generated from all orders?
+
+SELECT
+    SUM(Quantity * Unit_Price) AS total_revenue
+FROM sales;
