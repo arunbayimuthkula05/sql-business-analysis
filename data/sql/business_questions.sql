@@ -39,3 +39,12 @@ SELECT
 FROM sales
 GROUP BY Category
 ORDER BY total_quantity DESC;
+-- Business Question 6:
+-- Which month generated the most revenue?
+
+SELECT
+    MONTH(Date) AS month,
+    SUM(Quantity * Unit_Price) AS total_revenue
+FROM sales
+GROUP BY MONTH(Date)
+ORDER BY total_revenue DESC;
