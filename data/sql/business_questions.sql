@@ -21,3 +21,12 @@ SELECT
 FROM sales
 GROUP BY Customer
 ORDER BY total_spent DESC;
+-- Business Question 4:
+-- Which category generated the most revenue?
+
+SELECT
+    Category,
+    SUM(Quantity * Unit_Price) AS total_revenue
+FROM sales
+GROUP BY Category
+ORDER BY total_revenue DESC;
