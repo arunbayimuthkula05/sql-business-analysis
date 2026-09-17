@@ -30,3 +30,12 @@ SELECT
 FROM sales
 GROUP BY Category
 ORDER BY total_revenue DESC;
+-- Business Question 5:
+-- Which category sold the highest quantity?
+
+SELECT
+    Category,
+    SUM(Quantity) AS total_quantity
+FROM sales
+GROUP BY Category
+ORDER BY total_quantity DESC;
