@@ -12,3 +12,12 @@ SELECT
 FROM sales
 GROUP BY Product
 ORDER BY total_revenue DESC;
+-- Business Question 3:
+-- Which customers spent the most?
+
+SELECT
+    Customer,
+    SUM(Quantity * Unit_Price) AS total_spent
+FROM sales
+GROUP BY Customer
+ORDER BY total_spent DESC;
