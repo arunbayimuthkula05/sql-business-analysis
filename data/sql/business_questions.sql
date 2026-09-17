@@ -48,3 +48,12 @@ SELECT
 FROM sales
 GROUP BY MONTH(Date)
 ORDER BY total_revenue DESC;
+-- Business Question 7:
+-- Which customer placed the most orders?
+
+SELECT
+    Customer,
+    COUNT(*) AS total_orders
+FROM sales
+GROUP BY Customer
+ORDER BY total_orders DESC;
