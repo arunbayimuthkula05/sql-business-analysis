@@ -57,3 +57,9 @@ SELECT
 FROM sales
 GROUP BY Customer
 ORDER BY total_orders DESC;
+-- Business Question 8:
+-- What is the average order value?
+
+SELECT
+    AVG(Quantity * Unit_Price) AS average_order_value
+FROM sales;
