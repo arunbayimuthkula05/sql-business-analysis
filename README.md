@@ -26,3 +26,14 @@ This project answers questions related to:
 - Average order value
 - Product quantity sold
 - Overall revenue
+## 💡 Key Insights
+
+The analysis can be used to identify:
+
+- Products generating the highest revenue
+- Customers with the highest spending
+- Categories generating the most revenue
+- Monthly revenue patterns
+- Products with the highest sales volume
+- Customer ordering behavior
+- Overall business revenue
